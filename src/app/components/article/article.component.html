@@ -1,0 +1,20 @@
+<div class="uk-container uk-container-large">
+    <hr>
+    <div *ngIf="getArticleData().article">
+        <img src="http://localhost:1337{{ getArticleData().article.image.url }}" alt="" height="100" />
+    </div>
+    <hr>
+
+    <div *ngIf="getArticleData().article">
+        <h1 class="pageTitle">{{ getArticleData().article.title }}</h1>
+    </div>
+
+    <div class="container" *ngIf="getArticleData().article">
+        <p>
+            <markdown ngPreserveWhitespaces>
+                {{ getArticleData().article.content }}
+            </markdown>
+        </p>
+        <p></p>
+    </div>
+</div>

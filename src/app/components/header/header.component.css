@@ -1,0 +1,19 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.nameBar {
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .toolbarMenu {
+        display: none;
+    }
+}
+
+@media (min-width: 701px) {
+    .dropDownMenu {
+        display: none;
+    }
+}
