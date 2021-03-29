@@ -1,7 +1,7 @@
 <div class="uk-container uk-container-large">
     <hr>
     <div *ngIf="getArticleData().article">
-        <img src="{{ apiUrl + getArticleData().article.image.url }}" alt="" height="100" />
+        <img src="http://localhost:1337{{ getArticleData().article.image.url }}" alt="" height="100" />
     </div>
     <hr>
 
