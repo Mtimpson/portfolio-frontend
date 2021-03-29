@@ -4,6 +4,7 @@ import { Apollo } from 'apollo-angular';
 import gql from 'graphql-tag';
 import CATEGORY_ARTICLES_QUERY from '../../apollo/queries/category/articles';
 import { ActivatedRoute, ParamMap } from "@angular/router";
+import { environment } from 'src/environments/environment';
 
 
 @Component({
@@ -20,6 +21,8 @@ export class CategoryComponent implements OnInit {
   leftArticles: any[];
   rightArticles: any[];
   id: any;
+  apiUrl = environment.apiUrl;
+
 
   private queryCategoriesArticles: Subscription;
 
