@@ -3,6 +3,7 @@ import { Apollo } from 'apollo-angular';
 import gql from 'graphql-tag';
 import ARTICLES_QUERY from '../../apollo/queries/article/articles';
 import { Subscription } from "rxjs";
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-articles',
@@ -16,6 +17,7 @@ export class ArticlesComponent implements OnInit {
   leftArticlesCount: any;
   leftArticles: any[];
   rightArticles: any[];
+  apiUrl = environment.apiUrl;
 
   private queryArticles: Subscription;
 
