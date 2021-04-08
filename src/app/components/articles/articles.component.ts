@@ -17,7 +17,7 @@ export class ArticlesComponent implements OnInit {
   leftArticlesCount: any;
   leftArticles: any[];
   rightArticles: any[];
-  apiUrl = environment.apiUrl;
+  appUrl = environment.appUrl;
 
   private queryArticles: Subscription;
 
