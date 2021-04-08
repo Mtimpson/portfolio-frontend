@@ -16,7 +16,7 @@ export class ArticleComponent implements OnInit {
   data: any = {};
   loading = true;
   errors: any;
-  apiUrl = environment.apiUrl;
+  appUrl = environment.appUrl;
 
   private queryArticle: Subscription;
 
