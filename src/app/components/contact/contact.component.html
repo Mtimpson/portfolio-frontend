@@ -1,0 +1,58 @@
+<div class="form-container">
+    <h1 class="pageTitle">Get In Touch</h1>
+    <h3 class="pageDescription">I'll get back to you as soon as possible</h3>
+    <form [formGroup]="contactForm">
+        <div class="row">
+            <mat-form-field>
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name" required>
+                <mat-error *ngIf="contactForm.controls.name.hasError('required')">
+                    Your name is required.
+                </mat-error>
+                <mat-error *ngIf="contactForm.controls.name.hasError('maxlength')">
+                    {{maxLengthError + contactForm.controls.name.errors.maxlength.requiredLength + '.'}}
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" required>
+                <mat-error *ngIf="contactForm.controls.email.hasError('required')">
+                    An email is required.
+                </mat-error>
+                <mat-error *ngIf="contactForm.controls.email.hasError('email')">
+                    Please submit a valid email address.
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field>
+                <mat-label>Choose A Subject</mat-label>
+                <mat-select formControlName="subject">
+                    <mat-option *ngFor="let subject of subjects" [value]="subject">
+                        {{subject}}
+                    </mat-option>
+                </mat-select>
+                <mat-error *ngIf="contactForm.controls.subject.hasError('required')">
+                    Please select a subject.
+                </mat-error>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field>
+                <mat-label>Message</mat-label>
+                <textarea matInput cdkTextareaAutosize rows="3" formControlName="message" required></textarea>
+                <mat-error *ngIf="contactForm.controls.message.hasError('required')">
+                    Please provide a message.
+                </mat-error>
+                <mat-error *ngIf="contactForm.controls.message.hasError('maxlength')">
+                    {{maxLengthError + contactForm.controls.message.errors.maxlength.requiredLength + '.'}}
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <button mat-raised-button type="submit" color="primary" [disabled]="!contactForm.valid" (click)="onSubmit()" style="float: right;">Submit</button>
+    </form>
+</div>

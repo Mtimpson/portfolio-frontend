@@ -1,0 +1,20 @@
+img {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.pageTitle {
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: auto;
+}

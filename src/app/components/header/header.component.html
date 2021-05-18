@@ -1,0 +1,34 @@
+<mat-toolbar class='mat-elevation-z8'>
+    <span routerLink='home' class="nameBar">
+        <mat-icon class="name">landscape</mat-icon>Michael Timpson
+    </span>
+
+    <div class='spacer'></div>
+
+    <div class="toolbarMenu">
+        <a mat-button routerLink='home'>Home</a>
+        <a mat-button routerLink='blog'>Blog</a>
+        <a mat-raised-button routerLink='contact' color="accent">Contact</a>
+    </div>
+
+    <div class="dropDownMenu">
+        <button mat-icon-button class="example-icon" [matMenuTriggerFor]="menu"
+            aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu class="dropDownMenu" #menu="matMenu">
+            <button mat-menu-item routerLink='home'>
+                <mat-icon>home</mat-icon>
+                <span>Home</span>
+            </button>
+            <button mat-menu-item routerLink='blog'>
+                <mat-icon>code</mat-icon>
+                <span>Blog</span>
+            </button>
+            <button mat-menu-item routerLink='contact'>
+                <mat-icon>contact_page</mat-icon>
+                <span>Contact</span>
+            </button>
+        </mat-menu>
+    </div>
+</mat-toolbar>
