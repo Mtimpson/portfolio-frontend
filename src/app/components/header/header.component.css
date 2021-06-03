@@ -2,6 +2,10 @@
     flex: 1 1 auto;
 }
 
+mat-toolbar {
+    background-color: white;
+}
+
 .nameBar {
     cursor: pointer;
     color: #333;
