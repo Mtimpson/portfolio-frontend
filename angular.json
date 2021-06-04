@@ -31,7 +31,11 @@
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/uikit/dist/js/uikit.min.js",
               "node_modules/uikit/dist/js/uikit-icons.min.js"
-            ]
+            ],
+            "allowedCommonJsDependencies": [
+              "graphql-tag",
+              "zen-observable"
+           ]      
           },
           "configurations": {
             "production": {
