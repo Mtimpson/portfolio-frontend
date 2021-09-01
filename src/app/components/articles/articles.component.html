@@ -3,7 +3,7 @@
     <hr>
     <div class="uk-child-width-1-2" uk-grid>
         <div>
-            <a routerLink="/article/{{ article.id }}" routerLinkActive="active" *ngFor="let article of leftArticles"
+            <a routerLink="/article/{{ article.title }}" [queryParams]="article.id" routerLinkActive="active" *ngFor="let article of leftArticles"
                 class="uk-link-reset">
                 <div class="uk-card uk-card-muted">
                     <div *ngIf="article.image" class="uk-card-media-top">
@@ -20,7 +20,7 @@
         </div>
         <div>
             <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
-                <a routerLink="/article/{{ article.id }}" routerLinkActive="active"
+                <a routerLink="/article/{{ article.title }}" [queryParams]="article.id" routerLinkActive="active"
                     *ngFor="let article of rightArticles" class="uk-link-reset">
                     <div class="uk-card uk-card-muted">
                         <div *ngIf="article.image" class="uk-card-media-top">
