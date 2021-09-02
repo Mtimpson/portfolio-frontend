@@ -7,7 +7,7 @@
 
     <div *ngIf="getArticleData().article">
         <h1 class="pageTitle">{{ getArticleData().article.title }}</h1>
-        <h2 class="articleDetails">Michael Timpson | {{ getArticleData().article.published_at }} | {{ getArticleData().article.category.name }}</h2>
+        <h3 class="articleDetails">Michael Timpson | {{ getArticleData().article.published_at }} | {{ getArticleData().article.category.name }}</h3>
     </div>
 
     <div class="container" *ngIf="getArticleData().article">
