@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'blog', component: ArticlesComponent },
-  { path: "article/:id", component: ArticleComponent },
+  { path: "article/:title", component: ArticleComponent },
   { path: "category/:id", component: CategoryComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },

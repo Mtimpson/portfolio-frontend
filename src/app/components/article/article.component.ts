@@ -1,10 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Apollo } from 'apollo-angular';
 import gql from 'graphql-tag';
 import ARTICLE_QUERY from '../../apollo/queries/article/article';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { AppComponent } from '../../app.component';
 import { environment } from '../../../environments/environment';
 
 @Component({
@@ -13,21 +12,29 @@ import { environment } from '../../../environments/environment';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent implements OnInit {
+  articleId: number;
+
   data: any = {};
   loading = true;
   errors: any;
   appUrl = environment.appUrl;
 
   private queryArticle: Subscription;
+  private queryArticleId: Subscription;
 
   constructor(private apollo: Apollo, private route: ActivatedRoute) { }
 
+  getArticleId() {
+    this.queryArticleId = this.route.queryParams.subscribe(params => {
+      this.articleId = params[0];
+    })
+  }
   getArticle() {
     this.queryArticle = this.apollo
       .watchQuery({
         query: ARTICLE_QUERY,
         variables: {
-          id: this.route.snapshot.paramMap.get("id")
+          id: this.articleId
         }
       })
       .valueChanges.subscribe(result => {
@@ -44,10 +51,12 @@ export class ArticleComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getArticleId();
     this.getArticle();
   }
 
   ngOnDestroy() {
     this.queryArticle.unsubscribe();
+    this.queryArticleId.unsubscribe();
   }
 }
