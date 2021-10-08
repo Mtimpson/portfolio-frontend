@@ -5,8 +5,8 @@ h1 {
     padding-top: 10%;
     font-weight: normal;
     font-style: italic;
-    color: #333;
-    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
+    color: #004225;
+    font-size: clamp(12px, 8vw, 18px);
     font-family: var(--font-mono);
 }
 

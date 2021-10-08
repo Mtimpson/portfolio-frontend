@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   title = 'angularTests';
-  list = ['Software Engineer.', 'Builder.', 'Creator.', 'Digital Architect.', 'Computer Scientist.',
-    'Full Stack Developer.', 'Lover of Tech.', 'Problem Solver.', 'Leader', 'Out of the Box Thinker.', 'Communicator']
+  list = ['software engineer.', 'builder of the web.', 'creator.', 'digital architect.', 'computer scientist.',
+    'full stack developer.', 'lover of tech.', 'problem solver.', 'leader.', 'out of the box thinker.',
+    'coffee drinker.', 'mobile developer.']
 
   constructor() { }
 
