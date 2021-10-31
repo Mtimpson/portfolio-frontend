@@ -31,6 +31,7 @@ import { MarkdownModule, MarkdownService, MarkedOptions } from 'ngx-markdown';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
+import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ReactiveFormsModule,
     MarkdownModule,
     GraphQLModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularTypewriterEffectModule
   ],
   providers: [MarkdownService, MarkedOptions],
   bootstrap: [AppComponent]
