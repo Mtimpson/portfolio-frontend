@@ -4,7 +4,6 @@ h1 {
     padding-right: 3%;
     padding-top: 7%;
     font-weight: normal;
-    font-style: italic;
     color: #004225;
     font-size: clamp(12px, 8vw, 18px);
     font-family: var(--font-mono);
@@ -30,23 +29,38 @@ h3 {
     font-size: clamp(40px, 8vw, 80px);
     font-weight: bolder;
     font-family: var(--font-mono);
-    overflow: visible;
     white-space: nowrap;
     display: block;
     line-height: 150%;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
 }
 
 p {
     text-align: left;
     padding-left: 3.5%;
-    padding-right: 40%;
+    padding-right: 30%;
     padding-top: 1%;
-    padding-bottom: 20%;
+    padding-bottom: 2%;
     display: block;
-    font-size: var(--fz-xl);
-    line-height: 1.3;
     font-weight: normal;
     font-family: var(--font-mono);
+    font-size: clamp(18px, 8vw, 18px);
+    line-height: 30px;
+}
+
+@media (max-width: 700px) {
+    p {
+        padding-right: 5%;
+    }
+}
+
+@media (min-width: 701px) {
+    p {
+        padding-right: auto;
+    }
 }
 
 ngtypewriter {
@@ -60,16 +74,17 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    filter: grayscale(80%);
+    border-radius: 10px;
+}
+
+img:hover {
+    opacity: 75%;
+    cursor: pointer;
 }
 
 .pageTitle {
     font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-p {
-    font-size: 16px;
-    line-height: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
