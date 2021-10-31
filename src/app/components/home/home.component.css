@@ -78,11 +78,6 @@ img {
     border-radius: 10px;
 }
 
-img:hover {
-    opacity: 75%;
-    cursor: pointer;
-}
-
 .pageTitle {
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
