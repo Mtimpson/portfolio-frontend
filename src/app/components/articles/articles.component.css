@@ -16,3 +16,7 @@
 .articleTitle {
     color: #333;
 }
+
+img {
+    border-radius: 10px;
+}
