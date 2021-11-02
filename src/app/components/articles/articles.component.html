@@ -1,7 +1,7 @@
 <div class="uk-container uk-container-large">
     <h1 class="pageTitle">Debugging My Thoughts</h1>
     <hr>
-    <div class="uk-grid-width-small-1-2" uk-grid>
+    <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
         <div>
             <a routerLink="/article/{{ article.title }}" [queryParams]="article.id" routerLinkActive="active"
                 *ngFor="let article of leftArticles" class="uk-link-reset">
