@@ -19,8 +19,6 @@ h2 {
     font-family: var(--font-mono);
 }
 
-/* TODO: Fix nowrap on mobile  */
-
 h3 {
     text-align: left;
     padding-left: 3%;
