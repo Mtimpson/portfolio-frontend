@@ -17,6 +17,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { CategoryComponent } from './components/category/category.component';
 import { ArticleComponent } from './components/article/article.component';
 import { ArticlesComponent } from './components/articles/articles.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 /* Angular Material Imports */
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -30,7 +31,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MarkdownModule, MarkdownService, MarkedOptions } from 'ngx-markdown';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
-import { FooterComponent } from './components/footer/footer.component';
 import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 
 @NgModule({
