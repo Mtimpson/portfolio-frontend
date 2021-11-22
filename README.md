@@ -1,4 +1,4 @@
-## 👨‍💻 My Personal Portfolio.
+## 👨‍💻 My Personal Portfolio Site.
 <p>
   <a href="https://www.mtimpson.com/home" target="_blank">Mtimpson.com</a> built with <a href="https://angular.io/" target="_blank">Angular</a> and hosted @ <a href="https://dashboard.heroku.com/" target="_blank">Heroku.</a>
 </p>
