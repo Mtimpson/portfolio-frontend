@@ -1,27 +1,41 @@
-# PortfolioFrontend
+<div align="center">
+  <img alt="Website Preview" src="https://github.com/Mtimpson/portfolio-frontend/blob/main/src/assets/photos/website_preview.png?raw=true" width="auto" />
+</div>
+<br>
+<p align="center">
+  My Personal Portfolio <a href="https://www.mtimpson.com/home" target="_blank">mtimpson.com</a> built with <a href="https://angular.io/" target="_blank">Angular</a> and hosted with <a href="https://dashboard.heroku.com/" target="_blank">Heroku</a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
+## 🛠 Installation & Set Up
 
-## Development server
+1. Install the Angular CLI
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+   ```sh
+   npm install -g @angular/cli
+   ```
 
-## Code scaffolding
+3. Install dependencies
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+   ```sh
+   npm install
+   ```
 
-## Build
+4. Start the development server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+   ```sh
+   ng serve & navigate to `http://localhost:4200/
+   ```
 
-## Running unit tests
+## 🚀 Building and Running for Production
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Generate a full static production build
 
-## Running end-to-end tests
+   ```sh
+   Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+1. Preview the site as it appear's when deployed
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+   ```sh
+   Go to the /dist directory and run command `ng serve`
+   ```
