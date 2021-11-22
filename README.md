@@ -1,12 +1,13 @@
+## 👨‍💻 My Personal Portfolio.
+<p>
+  <a href="https://www.mtimpson.com/home" target="_blank">Mtimpson.com</a> built with <a href="https://angular.io/" target="_blank">Angular</a> and hosted @ <a href="https://dashboard.heroku.com/" target="_blank">Heroku.</a>
+</p>
 <div align="center">
   <img alt="Website Preview" src="https://github.com/Mtimpson/portfolio-frontend/blob/main/src/assets/photos/website_preview.png?raw=true" width="auto" />
 </div>
 <br>
-<p align="center">
-  My Personal Portfolio <a href="https://www.mtimpson.com/home" target="_blank">mtimpson.com</a> built with <a href="https://angular.io/" target="_blank">Angular</a> and hosted with <a href="https://dashboard.heroku.com/" target="_blank">Heroku</a>
-</p>
 
-## 🛠 Installation & Set Up
+## 🛠 Installation & Set Up.
 
 1. Install the Angular CLI
 
@@ -26,7 +27,7 @@
    ng serve & navigate to `http://localhost:4200/
    ```
 
-## 🚀 Building and Running for Production
+## 🚀 Building and Running for Production.
 
 1. Generate a full static production build
 
