@@ -26,8 +26,14 @@ export class ArticleComponent implements OnInit {
 
   getArticleId() {
     this.queryArticleId = this.route.queryParams.subscribe(params => {
-      this.articleId = params[0];
-    })
+      // TODO: Implement better fix.. this was a quick hack.
+      if (params[1] === undefined) {
+        this.articleId = params[0];
+      } else {
+        this.articleId = params[0] + params[1];
+      }
+      console.log(this.articleId);
+    });
   }
   getArticle() {
     this.queryArticle = this.apollo
