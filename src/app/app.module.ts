@@ -18,6 +18,7 @@ import { CategoryComponent } from './components/category/category.component';
 import { ArticleComponent } from './components/article/article.component';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 /* Angular Material Imports */
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -33,6 +34,9 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
 
+/* Other Imports */
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +49,8 @@ import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
     CategoryComponent,
     ArticleComponent,
     ArticlesComponent,
-    FooterComponent
+    FooterComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +68,8 @@ import { AngularTypewriterEffectModule } from 'angular-typewriter-effect';
     MarkdownModule,
     GraphQLModule,
     HttpClientModule,
-    AngularTypewriterEffectModule
+    AngularTypewriterEffectModule,
+    PdfViewerModule
   ],
   providers: [MarkdownService, MarkedOptions],
   bootstrap: [AppComponent]
