@@ -5,6 +5,11 @@ img {
     border-radius: 10px;
 }
 
+.imageContainer {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
 p {
     font-size: 18px;
     line-height: 28px;
