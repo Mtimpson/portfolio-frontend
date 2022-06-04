@@ -19,6 +19,7 @@ import { ArticleComponent } from './components/article/article.component';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { PhotosComponent } from './components/photos/photos.component';
 
 /* Angular Material Imports */
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -50,7 +51,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     ArticleComponent,
     ArticlesComponent,
     FooterComponent,
-    ResumeComponent
+    ResumeComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,

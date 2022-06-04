@@ -6,6 +6,7 @@ import { CategoryComponent } from './components/category/category.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { PhotosComponent } from './components/photos/photos.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { ServicesComponent } from './components/services/services.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'projects', component: ProjectsComponent },
+  { path: 'photos', component: PhotosComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'blog', component: ArticlesComponent },
   { path: 'resume', component: ResumeComponent },
